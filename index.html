@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>S1-17 💪 Atividade: Criando Formulário de Cadastro</title>
+</head>
+<body>
+    <div class="question">
+        <div class="quest">
+            <span><i>S1-17 💪 Atividade: Criando Formulário de Cadastro</i></span>
+        </div><!--quest-->
+    </div><!--question-->
+
+    <section class="container">
+        <form action="cadastrar.php" method="post">
+            <label for="nome">Nome:</label>
+            <input placeholder="Digite seu nome aqui.." type="text" id="nome" name="nome" required>
+          
+            <label for="email">E-mail:</label>
+            <input placeholder="Digite seu email aqui.." type="email" id="email" name="email" required>
+          
+            <label for="motivacao">O que o motivou a participar do evento?</label>
+            <textarea placeholder="Descreva aqui.." id="motivacao" name="motivacao" cols="30" rows="10"></textarea>
+          
+            <label for="modulo">Módulo no curso da Kenzie:</label>
+            <select id="modulo" name="modulo">
+              <option value="1">Módulo 1</option>
+              <option value="2">Módulo 2</option>
+              <option value="3">Módulo 3</option>
+              <option value="4">Módulo 4</option>
+            </select>
+          
+            <label for="senha">Cadastre uma senha</label>
+            <input placeholder="Digite sua senha aqui.." type="password" id="senha" name="senha" required>
+          
+            <label for="confirmar_senha">Confirmar senha:</label>
+            <input placeholder="Repita a senha.." type="password" id="confirmar_senha" name="confirmar_senha" required>
+          
+            <p>Deseja receber novidades por e-mail?</p>
+            <input type="radio" id="sim" name="novidades" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="novidades" value="nao">
+            <label for="nao">Não</label>
+            <br>
+          
+            <button type="submit">Cadastrar</button>
+          </form>
+    </section>
+    <footer>
+        <samp><i>WEFFERSSON LIMA DA SILVA</i></samp>
+    </footer>
+
+
+</body>
+</html>

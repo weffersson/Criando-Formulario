@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: rgb(143,25,103);
+    background: linear-gradient(0deg, rgba(143,25,103,1) 0%, rgba(21,62,62,1) 84%);
+}
+
+.question, footer {
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(143,25,103);
+    background: linear-gradient(0deg, rgba(143,25,103,1) 0%, rgba(21,62,62,1) 84%);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #cc4242;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(to left, #4ee20acc, #0dea09);
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="radio"]+label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+input[type="radio"]:last-child+label {
+    margin-right: 0;
+}
+
+.question {
+    animation-name: shine;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 620px) {
+    .question{
+        font-size: 22px;
+        height: 100px;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+footer {
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+    0% { color:rgb(0, 255, 76); }
+    25% {color: rgb(18, 2, 2);}
+    50% { color:rgb(63, 5, 63); }
+    100%{ color:rgb(192, 0, 48); }
+}
+@keyframes shine {
+
+    from {
+        text-shadow: 0 0 10px rgb(11, 11, 1);
+        
+    }
+    to {
+        text-shadow: 0 0 20px rgb(255, 0, 47);
+    }
+}
